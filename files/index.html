@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bernoulli y Euler · Dos matemáticos de Basilea</title>
+<meta name="description" content="Página interactiva sobre Jacob Bernoulli y Leonhard Euler.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#inicio">Bernoulli &amp; Euler</a>
+  <button class="burger" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav id="menu">
+    <a href="#biografia">Biografía</a><a href="#linea">Línea de tiempo</a><a href="#aportes">Aportes</a>
+    <a href="#impacto">Impacto</a><a href="#podcast">Podcast</a><a href="#quiz">Quiz</a>
+    <a href="#curiosos">Curiosidades</a><a href="#chat">Chat</a><a href="#fuentes">Fuentes</a>
+  </nav>
+</header>
+
+<main>
+<!-- 1. INICIO -->
+<section id="inicio" class="hero">
+  <div class="hero-text">
+    <p class="kicker">Electiva: Matemáticos de la Historia</p>
+    <h1>Jacob Bernoulli<br>y Leonhard Euler</h1>
+    <p class="lead">Dos matemáticos nacidos en Basilea. Uno estudió el azar y las curvas; el otro reescribió el lenguaje de las matemáticas. Una familia, una ciudad y una cadena de maestros los une.</p>
+    <blockquote>«Eadem mutata resurgo»: «Resurgiré el mismo, aunque cambiado». <cite>Inscripción pedida por Jacob Bernoulli para su tumba, junto a una espiral logarítmica.</cite></blockquote>
+    <blockquote class="q-euler">«Puedo hacer justo lo que deseo en mi investigación. El rey me llama su profesor y creo que soy el hombre más feliz del mundo». <cite>Leonhard Euler, en una carta desde Berlín. Traducción libre de la cita en MacTutor.</cite></blockquote>
+    <a class="btn" href="#biografia">Empezar el recorrido</a>
+  </div>
+  <!-- Ilustración SVG: la lemniscata que Jacob describió en 1694 -->
+  <figure class="hero-art">
+    <svg viewBox="0 0 300 200" role="img" aria-label="Lemniscata de Bernoulli dibujándose">
+      <path class="lemn" d="M150 100 C200 20 280 20 280 100 C280 180 200 180 150 100 C100 20 20 20 20 100 C20 180 100 180 150 100Z"/>
+    </svg>
+    <figcaption>La lemniscata: una curva «en forma de ocho», que Jacob llamó así por el latín <i>lemniscus</i> (cinta colgante).</figcaption>
+  </figure>
+</section>
+
+<!-- 2. BIOGRAFÍA -->
+<section id="biografia">
+  <h2>Dos vidas, una ciudad</h2>
+  <p class="intro">Ambos nacieron en Basilea (Suiza) y ambos tuvieron que pelear contra los planes de sus padres: la teología primero, las matemáticas después.</p>
+  <div class="two">
+    <article class="bio jacob">
+      <h3>Jacob Bernoulli <small>1655–1705</small></h3>
+      <img class="retrato" src="img/jacob.jpg" alt="Retrato de Jacob Bernoulli">
+      <p><b>Contexto.</b> Su familia, de origen belga y protestante, huyó de la persecución española en los Países Bajos y se instaló en Basilea, donde el padre dirigía un negocio de especias.</p>
+      <p><b>Formación.</b> Sus padres lo obligaron a estudiar filosofía y teología (maestría en 1671, licenciatura en 1676), algo que resintió. En paralelo estudiaba matemáticas y astronomía a escondidas. Fue el primero de la familia en tomar ese camino.</p>
+      <p><b>Trayectoria.</b> Tutor en Ginebra, viajó por Francia, Países Bajos e Inglaterra, donde conoció a Boyle y Hooke. Desde 1683 enseñó mecánica en Basilea y en 1687 obtuvo la cátedra de matemáticas, que ocupó hasta su muerte. Con su hermano Johann fue de los primeros en entender y aplicar el cálculo de Leibniz, entonces muy oscuro para casi todos.</p>
+    </article>
+    <article class="bio euler">
+      <h3>Leonhard Euler <small>1707–1783</small></h3>
+      <img class="retrato" src="img/euler.jpg" alt="Retrato de Leonhard Euler">
+      <p><b>Contexto.</b> Nació en Basilea y creció en Riehen. Su padre, pastor protestante, había asistido a las clases de Jacob Bernoulli y le enseñó matemáticas elementales.</p>
+      <p><b>Formación.</b> Entró a la universidad a los 14 años (1720). Johann Bernoulli notó su talento: no le dio clases privadas, pero lo dejó visitarlo los domingos por la tarde para resolver dudas. Johann convenció al padre de que lo dejara pasar de la teología a las matemáticas.</p>
+      <p><b>Trayectoria.</b> En 1727 se fue a la Academia de San Petersburgo; en 1741 a la de Berlín invitado por Federico el Grande; en 1766 volvió a San Petersburgo. Perdió la vista casi por completo y aun así produjo cerca de la mitad de su obra total después de volver.</p>
+    </article>
+  </div>
+</section>
+
+<!-- 3. LÍNEA DE TIEMPO -->
+<section id="linea" class="alt">
+  <h2>Línea de tiempo</h2>
+  <div class="filters" role="group" aria-label="Filtrar línea de tiempo">
+    <button class="chip on" data-f="all">Ambos</button>
+    <button class="chip" data-f="jacob">Jacob</button>
+    <button class="chip" data-f="euler">Euler</button>
+  </div>
+  <ol class="timeline">
+    <li data-w="jacob"><time>1655</time><p>Nace Jacob Bernoulli en Basilea (6 de enero).</p></li>
+    <li data-w="jacob"><time>1676</time><p>Termina teología; viaja como tutor y estudiante por Europa.</p></li>
+    <li data-w="jacob"><time>1687</time><p>Es nombrado profesor de matemáticas en Basilea; empieza a estudiar a Leibniz con Johann.</p></li>
+    <li data-w="jacob"><time>1690</time><p>Plantea la isócrona como ecuación diferencial; aparece por primera vez el término «integral».</p></li>
+    <li data-w="jacob"><time>1694</time><p>Describe la lemniscata.</p></li>
+    <li data-w="jacob"><time>1697</time><p>Ruptura total con su hermano Johann.</p></li>
+    <li data-w="jacob"><time>1705</time><p>Muere en Basilea (16 de agosto). Johann hereda su cátedra.</p></li>
+    <li data-w="jacob"><time>1713</time><p>Se publica su obra póstuma <i>Ars Conjectandi</i>.</p></li>
+    <li data-w="euler"><time>1707</time><p>Nace Leonhard Euler en Basilea (15 de abril).</p></li>
+    <li data-w="euler"><time>1727</time><p>Llega a San Petersburgo (17 de mayo); ese año usa por primera vez la letra <i>e</i> para la base de los logaritmos naturales.</p></li>
+    <li data-w="euler"><time>1734</time><p>Se casa con Katharina Gsell. Tendrán 13 hijos; solo cinco sobrevivirán la infancia.</p></li>
+    <li data-w="euler"><time>1735</time><p>Resuelve el problema de Basilea: la suma de 1/n² es π²/6.</p></li>
+    <li data-w="euler"><time>1741</time><p>Se traslada a Berlín, a la nueva academia de Federico el Grande.</p></li>
+    <li data-w="euler"><time>1748</time><p><i>Introductio in analysin infinitorum</i>: el análisis como estudio de funciones.</p></li>
+    <li data-w="euler"><time>1766</time><p>Regresa a San Petersburgo; pierde casi toda la vista.</p></li>
+    <li data-w="euler"><time>1771</time><p>Un incendio destruye su casa; salva sus manuscritos. Queda totalmente ciego.</p></li>
+    <li data-w="euler"><time>1783</time><p>Muere en San Petersburgo (18 de septiembre).</p></li>
+  </ol>
+</section>
+
+<!-- 4. APORTES -->
+<section id="aportes">
+  <h2>Aportes: lo esencial, sin fórmulas intimidantes</h2>
+
+  <article class="topic jacob">
+    <h3>Jacob y la ley de los grandes números</h3>
+    <p>Si repites un experimento muchas veces, la frecuencia con que ocurre un evento se acerca a su probabilidad. Jacob lo formalizó en su <i>Ars Conjectandi</i>, donde además discute qué es realmente la probabilidad: un grado medible de certeza.</p>
+    <div class="lab" id="coinlab">
+      <h4>Pruébalo tú: simulador de monedas</h4>
+      <p>Lanza una moneda justa. Al principio la proporción de caras salta; con miles de lanzamientos se estabiliza cerca de 0,5.</p>
+      <div class="row">
+        <button class="btn sm" data-n="10">+10</button><button class="btn sm" data-n="100">+100</button>
+        <button class="btn sm" data-n="1000">+1000</button><button class="btn sm ghost" data-n="0">Reiniciar</button>
+      </div>
+      <svg id="coinplot" viewBox="0 0 300 100" aria-label="Proporción de caras"><line x1="0" y1="50" x2="300" y2="50" class="mid"/><polyline id="coinline" points=""/></svg>
+      <p id="coinout" aria-live="polite">Lanzamientos: 0</p>
+    </div>
+  </article>
+
+  <article class="topic euler">
+    <h3>Euler: el puente entre exponenciales y trigonometría</h3>
+    <p>Euler escribió que <code>e<sup>ix</sup> = cos x + i·sen x</code>. Une la constante <i>e</i>, los números complejos y las funciones trigonométricas en una sola frase.</p>
+    <details class="solved" open>
+      <summary>Ejercicio resuelto: ¿cuánto vale e<sup>iπ</sup>?</summary>
+      <ol>
+        <li>Parte de la fórmula con x = π: <code>e<sup>iπ</sup> = cos π + i·sen π</code>.</li>
+        <li>Sabemos que cos π = −1 y sen π = 0.</li>
+        <li>Entonces <code>e<sup>iπ</sup> = −1 + i·0 = −1</code>, o sea <code>e<sup>iπ</sup> + 1 = 0</code>: la <b>identidad de Euler</b>.</li>
+      </ol>
+      <p>Coherente con otro hallazgo suyo de 1727: <code>ln(−1) = πi</code>.</p>
+    </details>
+  </article>
+
+  <div class="two">
+    <article class="topic jacob"><h3>Más de Jacob</h3>
+      <p>Resolvió en 1696 la «ecuación de Bernoulli», <code>y′ = p(x)y + q(x)yⁿ</code>; estudió la catenaria, la isócrona y las evolutas, y fue pionero en usar coordenadas polares. Mostró que 1/1² + 1/2² + 1/3² + … converge a un valor menor que 2, pero no pudo hallar cuál. Esa pregunta quedó abierta hasta Euler.</p></article>
+    <article class="topic euler"><h3>Más de Euler</h3>
+      <p>Resolvió ese problema en 1735: la suma vale π²/6. Es el autor de la notación <i>f(x)</i>, <i>e</i>, <i>i</i>, π (popularizada) y Σ. Fundó el cálculo de variaciones moderno (1740), aplicó análisis a la mecánica y a los fluidos, y dejó la ley de reciprocidad cuadrática como su gran hallazgo en teoría de números.</p></article>
+  </div>
+</section>
+
+<!-- 5. IMPACTO -->
+<section id="impacto" class="alt">
+  <h2>Impacto actual</h2>
+  <p class="intro">Qué dicen las fuentes y qué conexión modernas podemos trazar (marcadas como <em>interpretación</em>).</p>
+  <div class="grid">
+    <div class="card"><h4>Estadística y seguros</h4><p>La ley de los grandes números es base de la probabilidad. Euler mismo asesoró al gobierno de Federico en loterías, seguros, rentas y pensiones. <em>Interpretación:</em> hoy sostiene encuestas, ensayos clínicos y primas de seguros.</p></div>
+    <div class="card"><h4>Ciencia e ingeniería</h4><p>Las ecuaciones de Euler para fluidos y sus ángulos para rotación de sólidos siguen siendo herramientas estándar. <em>Interpretación:</em> aparecen en aerodinámica, robótica y simulación.</p></div>
+    <div class="card"><h4>Navegación</h4><p>Su teoría lunar ayudó a las tablas usadas para determinar la longitud en el mar; Gran Bretaña le pagó 300 libras por esa contribución teórica.</p></div>
+    <div class="card"><h4>Computación y vida cotidiana</h4><p><em>Interpretación:</em> la notación f(x) y Σ es el lenguaje de cualquier curso de programación o de ciencia de datos; la identidad de Euler está detrás de las ondas y señales que procesan audio e imágenes.</p></div>
+  </div>
+</section>
+
+<!-- 6. PODCAST -->
+<section id="podcast">
+  <h2>Podcast</h2>
+  <div class="two">
+    <div class="player jacob"><h4>Episodio 1 · Jacob Bernoulli</h4>
+      <!-- CÓMO CAMBIAR EL AUDIO DE JACOB:
+           1) Copia tu archivo "podcast_bernoulli.mp3" a la MISMA carpeta que este index.html
+              (o a una subcarpeta, p. ej. "audio/").
+           2) En src escribe la ruta relativa: src="podcast_bernoulli.mp3" o src="audio/podcast_bernoulli.mp3".
+           3) Si tu archivo se llama distinto, cambia solo el nombre dentro de src. -->
+      <audio controls preload="metadata"><source src="podcast_bernoulli.m4a" type="audio/mpeg">Tu navegador no soporta audio HTML5.</audio></div>
+    <div class="player euler"><h4>Episodio 2 · Leonhard Euler</h4>
+      <!-- CÓMO CAMBIAR EL AUDIO DE EULER:
+           Igual que arriba, con "podcast_euler.m4a" (formato AAC/MP4: type="audio/mp4").
+           Ejemplo con subcarpeta: src="audio/podcast_euler.m4a".
+           Si el audio no suena al abrir el archivo con doble clic, usa un servidor local
+           (p. ej. la extensión Live Server de VS Code) o súbelo a tu hosting. -->
+      <audio controls preload="metadata"><source src="podcast_euler.mp3" type="audio/mp4">Tu navegador no soporta audio HTML5.</audio></div>
+  </div>
+</section>
+
+<!-- 7. QUIZ -->
+<section id="quiz" class="alt">
+  <h2>Juego: ¿cuánto recuerdas?</h2>
+  <div id="quizbox" class="quizbox" aria-live="polite"></div>
+</section>
+
+<!-- 8. DATOS CURIOSOS -->
+<section id="curiosos">
+  <h2>Datos curiosos</h2>
+  <div class="grid">
+    <div class="card jacob"><h4>Maestro contra alumno</h4><p>Johann le pidió a Jacob que le enseñara matemáticas. Luego sus alardes provocaron que Jacob escribiera que Johann solo repetía lo que había aprendido de su maestro. Las fuentes lo califican de injusto.</p></div>
+    <div class="card jacob"><h4>El reto de la catenaria</h4><p>Según una fuente divulgativa, Jacob planteó el problema de la forma de una cadena colgante y Johann afirmó que Jacob nunca fue capaz de resolverlo. El choque terminó solo con la muerte de Jacob, cuando Johann heredó su cátedra.</p></div>
+    <div class="card jacob"><h4>Un error y una espiral</h4><p>Jacob creyó nuevo que la serie armónica diverge, pero Mengoli ya lo había probado 40 años antes. En su tumba pidió una espiral logarítmica.</p></div>
+    <div class="card euler"><h4>Matemáticas con un bebé en brazos</h4><p>Euler decía que algunos de sus mayores descubrimientos ocurrieron mientras sostenía a un bebé y otros niños jugaban a sus pies.</p></div>
+    <div class="card euler"><h4>Un número que parecía primo</h4><p>Fermat conjeturó que 2<sup>n</sup>+1 es primo si n es potencia de 2. Euler mostró que 2³²+1 = 4294967297 es divisible entre 641.</p></div>
+    <div class="card euler"><h4>Su último día</h4><p>Dio una clase de matemáticas a un nieto, calculó con tiza el movimiento de globos y comentó el recién descubierto Urano. Horas después murió.</p></div>
+  </div>
+</section>
+
+<!-- 11. CHATBOT -->
+<section id="chat" class="alt">
+  <h2>Habla con ellos</h2>
+  <p class="intro">Chatbot simulado: responde con respuestas preescritas basadas en las fuentes, no con inteligencia artificial en tiempo real.</p>
+  <div class="chat">
+    <div class="who" role="group" aria-label="Elegir personaje">
+      <button class="chip on" data-p="euler">Euler</button><button class="chip" data-p="jacob">Jacob</button>
+    </div>
+    <div id="log" class="log" aria-live="polite"></div>
+    <div id="sugg" class="sugg"></div>
+    <div class="send"><input id="msg" type="text" placeholder="Pregunta algo breve…" aria-label="Tu mensaje"><button id="go" class="btn sm">Enviar</button></div>
+  </div>
+</section>
+
+<!-- 9. FUENTES -->
+<section id="fuentes">
+  <h2>Fuentes (APA 7)</h2>
+  <ul class="refs">
+    <li>Boyer, C. B. (s. f.). Leonhard Euler. En <i>Encyclopaedia Britannica</i>. https://www.britannica.com/biography/Leonhard-Euler</li>
+    <li>O’Connor, J. J., y Robertson, E. F. (1998). <i>Jacob (Jacques) Bernoulli</i>. MacTutor History of Mathematics Archive, University of St Andrews. https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Jacob/</li>
+    <li>O’Connor, J. J., y Robertson, E. F. (1998). <i>Leonhard Euler</i>. MacTutor History of Mathematics Archive, University of St Andrews. https://mathshistory.st-andrews.ac.uk/Biographies/Euler/</li>
+    <li>O’Connor, J. J., y Robertson, E. F. (s. f.). <i>Lemniscate of Bernoulli</i>. MacTutor History of Mathematics Archive, University of St Andrews. https://mathshistory.st-andrews.ac.uk/Curves/Lemniscate/</li>
+    <li>Rojas Bernilla, E. (2021, 15 de febrero). Conflictos entre matemáticos: Johann Bernoulli versus Jacob Bernoulli. <i>Impulso Informativo</i>. https://impulsoinformativo.net/conflictos-entre-matematicos-johann-bernoulli-versus-jacob-bernoulli/</li>
+  </ul>
+  <p class="note">Nota: la fuente divulgativa (Rojas Bernilla) indica 1654 como año de nacimiento de Jacob; esta página usa 1655, el dato de MacTutor.</p>
+</section>
+
+<!-- 10. IA -->
+<section id="ia" class="alt">
+  <h2>Declaración de uso de IA</h2>
+  <p>Este sitio se elaboró con asistencia de un modelo de inteligencia artificial (Claude, de Anthropic) para estructurar el código, redactar textos divulgativos a partir de las fuentes citadas, y proponer las preguntas del quiz. El contenido fáctico se contrastó con esas fuentes; la autora o autor del proyecto debe revisarlo antes de entregarlo. Las conexiones con aplicaciones actuales marcadas como «interpretación» son del asistente y no provienen de las fuentes. Los chatbots son respuestas preescritas, no IA en vivo.</p>
+</section>
+</main>
+
+<footer>Proyecto final · Electiva: Matemáticos de la Historia</footer>
+<script src="script.js"></script>
+</body>
+</html>
